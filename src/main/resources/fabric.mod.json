@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "tsprint",
+  "version": "1.0.0",
+
+  "name": "Toggle Sprint",
+  "description": "Adds toggle sprint to pre 1.9",
+  "authors": [
+    "marinersfan824"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.marinersfan824.tpsrint.ToggleSprint"
+    ]
+  },
+  "mixins": [
+    "tsprint.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
