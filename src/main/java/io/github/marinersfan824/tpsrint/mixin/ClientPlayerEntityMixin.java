@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ClientPlayerEntityMixin {
     @Shadow public abstract void setSprinting(boolean sprinting);
 
-    @Inject(method = "sendMovementPackets", at = @At("HEAD"))
+    @Inject(method = "tickMovement", at = @At("HEAD"))
     public void sendSprintServer(CallbackInfo ci) {
         setSprinting(ToggleSprint.isSprinting);
     }
